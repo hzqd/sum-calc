@@ -5,8 +5,8 @@ fn main() {
         read_line()
             .tap(|s| if s.is_empty() { process::exit(0) })
             .split_whitespace()
-            .filter_map(|s| s.parse::<f32>().ok())
-            .sum::<f32>()
+            .filter_map(|s| s.parse::<f64>().ok())
+            .sum::<f64>()
             .echo();
     }
 }
