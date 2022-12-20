@@ -3,7 +3,7 @@ use aoko::{standard::functions::{ext::StdAnyExt, fun::read_line}, no_std::pipeli
 fn main() {
     loop {
         read_line()
-            .tap(|s| if s.is_empty() { process::exit(0) })
+            .tap(|s| if s.trim_end().is_empty() { process::exit(0) })
             .split_whitespace()
             .filter_map(|s| s.parse::<f64>().ok())
             .sum::<f64>()
