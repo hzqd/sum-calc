@@ -5,6 +5,7 @@ fn main() {
         read_line()
             .tap(|s| if s.trim_end().is_empty() { process::exit(0) })
             .split_whitespace()
+            .map(|s| s.chars().filter(|c| ('0'..'9').contains(c)).collect::<String>())
             .filter_map(|s| s.parse::<f64>().ok())
             .sum::<f64>()
             .echo();
