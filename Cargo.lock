@@ -81,7 +81,7 @@ dependencies = [
 
 [[package]]
 name = "sum-calc"
-version = "0.0.4"
+version = "0.0.5"
 dependencies = [
  "aoko",
 ]
