@@ -1,6 +1,6 @@
 [package]
 name = "sum-calc"
-version = "0.0.5"
+version = "0.0.6"
 edition = "2021"
 description = "A sum calc."
 repository = "https://github.com/hzqd/sum-calc"
@@ -10,3 +10,4 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 aoko = "=0.3.0-alpha.19"
+regex = "1.8.4"
