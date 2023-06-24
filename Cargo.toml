@@ -1,6 +1,6 @@
 [package]
 name = "sum-calc"
-version = "0.0.8"
+version = "0.0.9"
 edition = "2021"
 description = "A sum calc."
 repository = "https://github.com/hzqd/sum-calc"
