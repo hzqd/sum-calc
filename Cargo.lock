@@ -4,9 +4,9 @@ version = 3
 
 [[package]]
 name = "aoko"
-version = "0.3.0-alpha.19"
+version = "0.3.0-alpha.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c2471512394c8095203c20a5f2635c7a72d39ec078ac7915f7179f1aa78d46ef"
+checksum = "c80372d86ad5be306e69e754ae5fea54430234ac7412284eeeaa1b4b339ff3ff"
 dependencies = [
  "itertools",
  "minstant",
@@ -161,7 +161,7 @@ checksum = "94143f37725109f92c262ed2cf5e59bce7498c01bcc1502d7b9afe439a4e9f49"
 
 [[package]]
 name = "sum-calc"
-version = "0.0.12"
+version = "0.0.13"
 dependencies = [
  "aoko",
  "rayon",
