@@ -20,11 +20,11 @@ fn cangjie_official_language_design_member_liu_jun_jie_implementation_based_on_f
     })
 }
 fn main() {
-    loop {
+    (0..).map(|_| {
         let mut s = String::new();
         stdin().read_line(&mut s).unwrap();
-        if s.trim_end().is_empty() { break }
-        let f = cangjie_official_language_design_member_liu_jun_jie_implementation_based_on_finite_state_machine_translated_by_hzqd(s);
-        println!("{f}")
-    }
+        s
+    }).take_while(|s| !s.trim_end().is_empty())
+        .map(|t| cangjie_official_language_design_member_liu_jun_jie_implementation_based_on_finite_state_machine_translated_by_hzqd(t))
+        .for_each(|f| println!("{f}"));
 }
